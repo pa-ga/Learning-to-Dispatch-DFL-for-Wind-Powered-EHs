@@ -92,16 +92,17 @@ The following hydrogen scenarios are available:  {low_h2_price, baseline, high_h
 
 ### Run Decision-Focused Learning Pipeline
 
-  `python main.py --dfl INSERT MODEL NAME --scenario INSERT SCENARIO NAME`
-    Important: This trains the model and then directly runs evaluation, to solely run training add after the scenario indication `--no-eval`
-      e.g., `python main.py --dfl medium_autoreg_lstm_reg_overlap --scenario low_h2_price --no-eval`
+`python main.py --dfl INSERT MODEL NAME --scenario INSERT SCENARIO NAME`
+
+Important: This trains the model and then directly runs evaluation, to solely run training add after the scenario indication `--no-eval`
+  - e.g., `python main.py --dfl medium_autoreg_lstm_reg_overlap --scenario low_h2_price --no-eval`
     
-    For running on different scenario add `--wf-scenario 3800mw` before the scenario indication.
-    e.g., `python main.py --dfl medium_autoreg_lstm_reg_overlap --wf-scenario 3800mw --scenario low_h2_price --no-eval`
+For running on different scenario add `--wf-scenario 3800mw` before the scenario indication.
+  - e.g., `python main.py --dfl medium_autoreg_lstm_reg_overlap --wf-scenario 3800mw --scenario low_h2_price --no-eval`
 
 
-    To run evaluation on test split replace `--no-eval` with `--eval-only`. 
-    If indication is missing the model automatically runs training and then test evaluation in sequence.
+To run evaluation on test split replace `--no-eval` with `--eval-only`. 
+If indication is missing the model automatically runs training and then test evaluation in sequence.
   
 
 
