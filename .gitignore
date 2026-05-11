@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+.env
+__pycache__/
+*.pyc
+#ignore folders
+checkpoints_*/                                                                                                                                                       
+data_splits_*/                                                                                                                                                                                                                                                                                                                       
+figures/                                                                                                                                                                    
+results/
+processed_data/  
+*.pt
+*.parquet
+*.joblib
